@@ -24,13 +24,13 @@ let currentDate = document.querySelector('.date');
 let date = new Date();
 currentDate.innerHTML = formatDate(date);
 
-
-
 function displayWeatherCondition(response) {
   document.querySelector('#city-title').innerHTML = response.data.name;
   document.querySelector('#temperature').innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector('.description').innerHTML =
+    response.data.weather[0].description;
 }
 
 function searchCity(city) {
