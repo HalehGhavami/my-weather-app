@@ -19,14 +19,16 @@
   </head>
 
   <body>
-    <div class="card m-5">
-      <div class="card-body">
+   <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          
         <div class="container-fluid">
           <form role="search" class="form">
             <div class="row">
-              <div class="col-6">
+              <div class="col-9">
                 <input
-                  class="form-control me-2 shadow-sm"
+                  class="form-control me-2 search-input"
                   type="search"
                   placeholder="Type a city ..."
                   autofocus="on"
@@ -37,96 +39,56 @@
               </div>
               <div class="col-3">
                 <input
-                  class="form-control btn btn-primary shadow-sm w-100"
+                  class="form-control btn btn-primary w-100 search-button"
                   type="submit"
                   value="Search"
                 />
               </div>
 
-              <div class="col-3">
-                <button
-                  class="btn btn-success w-100"
-                  id="current-location-button"
-                >
-                  Current
-                </button>
-              </div>
             </div>
           </form>
         </div>
 
         <br />
-        <h1 class="card-title city-title" id="city-title">
-          <!-- <i class="fa-solid fa-cloud-showers-heavy cloud-shower-icon"></i> -->
-        </h1>
-        <h2 class="date"></h2>
-        <h2 class="description"></h2>
+
+        <h1 class="card-title city-title" id="city-title"></h1>
+
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li class="date"></li>
+              <li class="description"></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="humidity"></li>
+              <li id="wind"></li>
+            </ul>
+          </div>
+        </div>
+
         <h3>
-          <span class="temperature" id="temperature"></span>
-          <span class="unit" id="unit">°C</span>
-
-          <!-- <span class="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span> -->
+          <div class="d-flex">
+            <img src="" alt="weather icon" id="icon" />
+            <span class="temperature" id="temperature"></span>
+            <span class="units" id="unit">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link" class="active">°F</a>
+            </span>
+          </div>
         </h3>
-        <!-- <div class="card border-0">
-          <div class="card-title day-title">
-            <div class="row text-center">
-              <div class="col-2">Today</div>
-              <div class="col-2">Wed</div>
-              <div class="col-2">Thu</div>
-              <div class="col-2">Fri</div>
-              <div class="col-2">Sat</div>
-              <div class="col-2">Sun</div>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-2">14°C</div>
-            <div class="col-2">13°C</div>
-            <div class="col-2">12°C</div>
-            <div class="col-2">12°C</div>
-            <div class="col-2">11°C</div>
-            <div class="col-2">14°C</div>
-          </div>
-          <div class="row text-center">
-            <div class="col-2">11/01</div>
-            <div class="col-2">11/02</div>
-            <div class="col-2">11/03</div>
-            <div class="col-2">11/04</div>
-            <div class="col-2">11/05</div>
-            <div class="col-2">11/06</div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-2">
-              <i class="fa-solid fa-cloud-showers-heavy cloud-shower-icon"></i>
-            </div>
-            <div class="col-2">
-              <i class="fa-solid fa-cloud-showers-heavy cloud-shower-icon"></i>
-            </div>
-            <div class="col-2">
-              <i class="fa-sharp fa-solid fa-sun sun-icon"></i>
-            </div>
-            <div class="col-2">
-              <i class="fa-sharp fa-solid fa-sun sun-icon"></i>
-            </div>
-            <div class="col-2">
-              <i class="fa-sharp fa-solid fa-sun sun-icon"></i>
-            </div>
-            <div class="col-2">
-              <i class="fa-sharp fa-solid fa-sun sun-icon"></i>
-            </div>
-          </div>
-        </div> -->
+        </div>
       </div>
-    </div>
+   </div>
+     
+      
+   
     <footer>
       Open-source code at
       <a
-        href="https://github.com/HalehGhavami/my-weather-app"
-        class="fa-brands fa-github"
+        href="https://github.com/HalehGhavami/my-weather-app" target="_blank"
+        class="fa-brands fa-github social-link"
       ></a>
       by Haleh Ghavami
     </footer>
