@@ -19,75 +19,72 @@
   </head>
 
   <body>
-   <div class="container">
+    <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          
-        <div class="container-fluid">
-          <form role="search" class="form">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  class="form-control me-2 search-input"
-                  type="search"
-                  placeholder="Type a city ..."
-                  autofocus="on"
-                  autocomplete="off"
-                  aria-label="Search"
-                  id="search-input"
-                />
+          <div class="container-fluid">
+            <form role="search" class="form">
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    class="form-control me-2 search-input"
+                    type="search"
+                    placeholder="Type a city ..."
+                   
+                    autocomplete="off"
+                    aria-label="Search"
+                    id="search-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    class="form-control btn btn-primary w-100 search-button"
+                    type="submit"
+                    value="Search"
+                  />
+                </div>
               </div>
-              <div class="col-3">
-                <input
-                  class="form-control btn btn-primary w-100 search-button"
-                  type="submit"
-                  value="Search"
-                />
-              </div>
+            </form>
+          </div>
 
+          <br />
+
+          <h1 class="card-title city-title" id="city-title"></h1>
+
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li class="date"></li>
+                <li class="description"></li>
+              </ul>
             </div>
-          </form>
-        </div>
-
-        <br />
-
-        <h1 class="card-title city-title" id="city-title"></h1>
-
-        <div class="row">
-          <div class="col-6">
-            <ul>
-              <li class="date"></li>
-              <li class="description"></li>
-            </ul>
+            <div class="col-6">
+              <ul>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li id="humidity"></li>
-              <li id="wind"></li>
-            </ul>
-          </div>
-        </div>
 
-        <h3>
-          <div class="d-flex">
-            <img src="" alt="weather icon" id="icon" />
-            <span class="temperature" id="temperature"></span>
-            <span class="units" id="unit">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link" class="active">°F</a>
-            </span>
-          </div>
-        </h3>
+          <h3>
+            <div class="d-flex">
+              <img src="" alt="weather icon" id="icon" />
+              <span class="temperature" id="temperature"></span>
+              <span class="units" id="unit">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link" class="active">°F</a>
+              </span>
+            </div>
+          </h3>
         </div>
       </div>
-   </div>
-     
-      
-   
+    </div>
+
     <footer>
       Open-source code at
       <a
-        href="https://github.com/HalehGhavami/my-weather-app" target="_blank"
+        href="https://github.com/HalehGhavami/my-weather-app"
+        target="_blank"
         class="fa-brands fa-github social-link"
       ></a>
       by Haleh Ghavami
