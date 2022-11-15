@@ -69,7 +69,6 @@ li span {
   color: #fff !important;
   background-color: #197f8e;
   text-decoration: none;
- 
 }
 
 .search-input {
@@ -87,4 +86,23 @@ footer {
   text-align: center;
   font-size: 18px;
   margin: 30px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
